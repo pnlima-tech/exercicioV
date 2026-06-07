@@ -1,0 +1,18 @@
+<h2>Cadastrar Aluno</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Nome)
+        @Html.TextBoxFor(m => m.Nome)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Idade)
+        @Html.TextBoxFor(m => m.Idade)
+    </div>
+    <button type="submit">Cadastrar</button>
+}
